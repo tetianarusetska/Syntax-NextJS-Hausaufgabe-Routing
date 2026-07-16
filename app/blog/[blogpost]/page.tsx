@@ -21,6 +21,10 @@ export default async function BlogPost({ params }: { params: Promise<{ blogpost:
         throw new Error("Fehler beim Laden des Blogposts: Server nicht erreichbar");
     }
 
+    if (blogpost === "not-found") {
+        throw new Error("Fehler beim Laden des Blogposts: Inhalt nicht verfügbar");
+    }
+
     return (
         <>
             <div className="flex flex-row justify-between m-10">
