@@ -1,6 +1,9 @@
 import ButtonToHome from "@/app/s_components/ButtonToHome";
 
-export default function Blogpost3({ blogpost }: { blogpost: string }) {
+export default async function Blogpost3({ blogpost }: { blogpost: string }) {
+
+    await new Promise((resolve) => setTimeout(resolve, 2000));
+
     return (
         <>
             <h1 className="font-['Fejoa'] text-2xl font-bold underline mx-10 my-4">Slug: {blogpost}</h1>

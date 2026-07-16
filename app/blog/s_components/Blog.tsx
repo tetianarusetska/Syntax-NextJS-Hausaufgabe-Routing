@@ -1,7 +1,9 @@
-"use client";
 import Link from "next/link";
 
-export default function Blog() {
+export default async function Blog() {
+
+    await new Promise((resolve) => setTimeout(resolve, 2000));
+
     return <div className="min-h-screen w-full">
         <h1 className="text-5xl font-['BebasNeue'] m-10">Blog</h1>
         <div className="flex flex-row mx-10 my-2 gap-10">

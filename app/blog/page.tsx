@@ -1,11 +1,11 @@
 import ButtonToHome from "../s_components/ButtonToHome";
 import Menu from "../cl_components/Menu";
 import Blog from "./s_components/Blog";
+import Spinner from "../s_components/Spinner";
+import { Suspense } from "react";
 
 
-export default async function BlogPage() {
-
-    await new Promise((resolve) => setTimeout(resolve, 2000));
+export default function BlogPage() {
 
     return (
         <>
@@ -13,8 +13,9 @@ export default async function BlogPage() {
                 <Menu />
                 <ButtonToHome />
             </div>
-
-            <Blog />
+            <Suspense fallback={<Spinner />}>
+                <Blog />
+            </Suspense>
         </>
     )
 }
