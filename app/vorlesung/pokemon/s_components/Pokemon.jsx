@@ -1,5 +1,3 @@
-"use client";
-
 export default async function Pokemon() {
     const response = await fetch('https://pokeapi.co/api/v2/pokemon');
     const { results: pokemon } = await response.json();

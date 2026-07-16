@@ -1,5 +1,5 @@
 import { Suspense } from 'react';
-import Pokemon from './cl_components/Pokemon';
+import Pokemon from './s_components/Pokemon';
 
 export default async function PokemonPage() {
     return (
