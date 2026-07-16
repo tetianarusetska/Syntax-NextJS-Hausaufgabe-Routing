@@ -1,9 +1,12 @@
-import ButtonToHome from "../cl_components/ButtonToHome";
+import ButtonToHome from "../s_components/ButtonToHome";
 import Menu from "../cl_components/Menu";
-import Blog from "./cl_components/Blog";
+import Blog from "./s_components/Blog";
 
 
-export default function BlogPage() {
+export default async function BlogPage() {
+
+    await new Promise((resolve) => setTimeout(resolve, 2000));
+
     return (
         <>
             <div className="flex flex-row justify-between m-10">

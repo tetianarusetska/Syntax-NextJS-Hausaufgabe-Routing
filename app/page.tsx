@@ -1,4 +1,4 @@
-import Home from "./cl_components/Home";
+import Home from "./s_components/Home";
 import Menu from "./cl_components/Menu";
 
 

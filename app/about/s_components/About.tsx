@@ -1,5 +1,3 @@
-"use client";
-
 export default function About() {
     return <div className="min-h-screen w-full">
         <h1 className="text-5xl font-['BebasNeue'] m-10">About</h1>

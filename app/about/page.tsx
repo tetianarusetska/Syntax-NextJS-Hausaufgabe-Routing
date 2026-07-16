@@ -1,6 +1,6 @@
-import ButtonToHome from "../cl_components/ButtonToHome";
+import ButtonToHome from "../s_components/ButtonToHome";
 import Menu from "../cl_components/Menu";
-import About from "./cl_components/About";
+import About from "./s_components/About";
 
 
 export default function AboutPage() {
